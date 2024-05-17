@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    font-family: Roboto;
+}
+a {
+    text-decoration: none;
+}
+
+:root {
+    --blue_royal: #071B34;
+    --text-color: #0E0F1D;
+    --skyblue_hoever:#4CC4CC;
+}
+
+/* top bar css starts  */
+#top-bar {
+    background-color: var(--blue_royal);
+    padding: 15px 0px 15px 0px;
+}
+
+#top-bar .top-bar-links {
+    padding-top: 5px;
+}
+
+#top-bar .fa-brands {
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#top-bar .top-bar-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#top-bar .top-bar-buttons .input-group {
+    box-shadow: none !important;
+    width: 40%;
+    margin-right: 20px;
+    border: white 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+#top-bar .top-bar-buttons .input-group .form-control::placeholder {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#top-bar .top-bar-buttons .form-control {
+    background-color: var(--blue_royal);
+    border: none !important;
+    box-shadow: none;
+    color: var(--blue_royal);
+}
+
+#top-bar .top-bar-sponsor-btn {
+    color: #071B34;
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    border: none !important;
+    background-color: white;
+    padding: 12px 8px 12px 8px;
+    /* color: #071B34;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase; */
+}
+
+#top-bar .top-bar-sponsor-btn img {
+    padding-left: 5px;
+    width: 25px;
+    height: 16px;
+}
+@media screen and (max-width: 992px) 
+{
+    #top-bar{
+        display: none;
+
+    }
+}
+/* top bar css ends */
+
+/* *****************nav-bar css starts ****************** */
+#nav-bar-section .navbar {
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+/* #nav-bar-section .navbar .custom_collapse 
+{
+    direction: ltr; 
+     display: flex;
+    justify-content: flex-end;
+} */
+#nav-bar-section .navbar .container-fluid .navbar-toggler .navbar-toggler-icon
+{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end;
+}
+#nav-bar-section .navbar-nav .nav-link {
+    color: #2D2D2D;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#nav-bar-section .navbar-nav .nav-item .dropdown-content {
+    display: none;
+}
+
+#nav-bar-section .navbar-nav .nav-item .dropdown-content li {
+    list-style-type: none;
+   
+}
+
+#nav-bar-section .navbar-nav .nav-item:hover .dropdown-content {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    margin: 0px;
+}
+#nav-bar-section .navbar-nav .nav-item .dropdown-content .dropdown-item
+{
+    color:#2D2D2D;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+#nav-bar-section .navbar-nav .nav-link .img_toggle{
+    height: 17px;
+}
+/* #nav-bar-section .navbar .nav_logo_img
+{
+    position: absolute;
+    margin: 150px 0px 0px -10px;
+} */
+#nav-bar-section .navbar .nav_logo_img .nav_logo_resize
+{
+    position: absolute;
+    top: 0px;
+    max-width: 220px;
+    height: auto;
+}
+
+@media screen and (max-width: 992px) 
+{
+    #nav-bar-section .navbar .nav_logo_img .nav_logo_resize
+    {
+         position: relative; 
+        width: 100px;
+        height: 100px; 
+        /* display: none; */
+    }
+}
+@media screen and (max-width: 992px) 
+{
+    #nav-bar-section .navbar-nav .nav-item:hover .dropdown-content {
+     position: relative;
+    } 
+}
+/* nav-bar-section css ends */
+
+
+
+/* css starts  became a member */
+#became_member{
+    background:linear-gradient(to right, 
+    rgba(7, 27, 52, 0.9),
+    rgba(7, 27, 52, 0.69),
+    rgba(7, 27, 52, 0.47),
+    rgba(7, 27, 52, 0.31),
+    rgba(7, 27, 52, 0)), url('/assets/images/ADVOCACY/advo_bg.png');
+    background-position: center;
+    background-size: cover;
+    padding: 140px 140px;
+}
+#became_member .became_member_banner_content
+{
+    padding: 90px 0px 90px 0px; 
+}
+#became_member .became_member_banner_content .became_member_banner_breadcrumb
+{
+    text-transform: uppercase;
+    color: white;
+    font-family: Playfair Display;
+    /*font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 0em; */
+}
+#became_member .became_member_banner_content .breadcrumb .breadcrumb-item
+{
+    padding-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* #became_member .became_member_banner_content .breadcrumb .bread_arrow::before
+{
+    content: '';
+    display: block;
+    background: url('../images/head_arrow.png'), center no-repeat;
+    background-size: cover;
+} */
+#became_member .became_member_banner_content .breadcrumb .breadcrumb-item a
+{
+    color: white;
+}
+#became_member .became_member_banner_content .breadcrumb .breadcrumb-item .arrow_resize
+{
+     height: 13px;
+}
+@media screen and (max-width: 992px) 
+{
+    #became_member
+    {
+        padding: 60px 0;
+    }
+}
+/*  became_memeber css ends */
+
+
+/* ***********************adv_bussiness csss starts  */
+
+
+/* #adv_bussiness
+{
+
+} */
+
+#adv_bussiness .adv_bussiness_content .adv_bussiness_title
+{
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 55.99px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #071B34;
+}
+#adv_bussiness .adv_bussiness_content .adv_bussiness_text
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: justified;
+    color: #2D2D2D;
+
+}
+#adv_bussiness .adv_bussiness_img::before{
+    content: "";
+    position: absolute;
+    display: block;
+    border: 2px solid #071B34;
+    border-radius: 10px;
+    right: 10px;
+    width: 100%;
+    height: 90%;
+    top: 20%;
+    right: 0%;
+    z-index: -1;
+}
+#adv_bussiness .adv_bussiness_img{
+    position: relative !important;
+    /* top: 20px;
+    right: 10px; */
+}
+
+
+  
+
+/* #adv_bussiness .adv_bussiness_img .img_resize_adv_bus
+{
+    position: relative;
+    object-fit: cover;
+    width: calc(100% - 3rem);
+} */
+/* adv_bussiness csss ends  */
+
+
+/* agenda_bussiness css starts  */
+#agenda
+{
+    background-color:#071B34;
+    padding-bottom: 40px;
+}
+
+#agenda .agenda_cards .resize_W_H
+{
+    width: 100%;
+    min-height: 200px;
+    border-radius: 10px;
+}
+#agenda .agenda_cards .agenda_img
+{
+    padding-top: 20px;
+    max-width: 65px;
+}
+#agenda .agenda_cards .card-body .card-title
+{
+    color:#071B34;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+    text-transform: uppercase;
+    /* text-align: center; */
+
+}
+#agenda .agenda_cards .card-body .card-text
+{
+    color: #3F3F3F;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 30px;
+    text-align: center; */
+
+}
+
+/* ***************************************agenda_bussiness css ends  */
+
+
+
+/*  *************************our_priorities csss starts*/
+
+
+#our_priorities .our_priorities_title
+{
+    font-family: Playfair Display;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 55.99px;
+    text-align: center;
+    color: #071B34;
+    padding-bottom: 20px;
+
+}
+
+
+#our_priorities .priorities .card .card-body .card-title
+{
+    color: #071B34;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+
+}
+#our_priorities .priorities .card .card-body .card-text
+{
+    color: #2D2D2D;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 27px; */
+    text-align: justified;
+
+}
+/*  *************************our_priorities csss ends*/
+
+/*  *************************regional_priorities csss starts*/
+#regional_priorities{
+    padding-bottom: 40px;
+}
+
+#regional_priorities .regional_priorities_title
+{
+    font-family: Playfair Display;
+    font-size: 42px;
+    font-weight: 600;
+    /* line-height: 55.99px;
+    text-align: left; */
+    text-align: center;
+    color: #071B34;
+}
+#regional_priorities .regional_priorities_title span
+{
+ font-family: Abril Fatface;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 56.66px;
+}
+#regional_priorities .regional_priorities_wrapper_icons
+{
+    padding-top: 30px;
+}
+#regional_priorities .card
+{
+    background-color:#071B34 ;
+}
+#regional_priorities .regional_priorities_wrapper_icons .card_resize
+{
+    width: 100%;
+    /* min-height: 140px; */
+}
+#regional_priorities .card .card-img-top
+{
+    padding-top: 20px;
+    max-width: 35px;
+    max-height: 50px;
+}
+#regional_priorities .card .card-body .card-title
+{
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.78px;
+    text-align: left;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    #regional_priorities .regional_priorities_title
+    {
+        font-size: 28px;   
+    }
+}
+@media screen and (max-width: 768px) {
+    #regional_priorities .regional_priorities_title span
+    {
+        font-size: 28px;   
+    }
+}
+
+/*  *************************regional_priorities csss ends*/
+
+
+/* read_to_join_heading css sarts */
+#ready_to_join
+{
+    background: linear-gradient(to right, rgba(7, 27, 52, 0.9),rgba(7, 27, 52, 0.9)), url('/assets/images/membership/join_member_bg.png');
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0px 50px 0px;
+}
+#ready_to_join .read_to_join_heading
+{ 
+    color: white;
+    font-family: Playfair Display;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 55.99px;
+    text-align:center;
+
+}
+#ready_to_join .read_to_join_text
+{
+    font-family: Roboto;
+    color: white;
+    font-size: 16px;
+    /* font-weight: 400; */
+    line-height: 27px;
+    text-align: center;
+    padding: 10px 0px;
+
+}
+#ready_to_join .ready_to_join_btn
+{
+    background-color: white;
+    color: #071B34;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 8px;
+    width: 200px;
+
+}
+#ready_to_join .ready_to_join_contact_btn
+{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+   padding: 8px 18px;
+    background-color:#071B34;
+    color: white;
+    border: 3px solid white ;
+    border-radius: 8px;
+    text-transform: uppercase;
+    width: 180px;
+
+}
+
+/* read_to_join_heading css ends  */
+
+
+/********** Footer css **********************************************8****/
+/* footer css first column */
+#footer
+{
+    padding:20px 0px 20px 0px;
+}
+#footer .footer_logo-section .footer_logo {
+    max-width: 120px;
+}
+
+#footer .footer_logo-section .footer_text {
+    color: #040404;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    padding-top: 5px;
+}
+
+#footer .footer_logo-section .footer_social_icons .fa-brands {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    background-color: var(--blue_royal);
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+
+#footer .footer_title {
+    color: #0E0F1D;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+#footer .footer_nav_links .footer_links .link {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+#footer .footer_nav_links .footer_links .link a {
+    color: var(--text-color);
+}
+
+#footer .footer_nav_links .footer_links {
+    padding: 0px;
+}
+
+#footer .footer_nav_links .footer_links .fa-solid {
+    color: var(--text-color);
+    padding-right: 7px;
+}
+#footer .footer_contact_media
+{
+    display: flex;
+    gap: 7px;
+} 
+#footer .footer_contact_media .footer_contact_link
+{
+    color: var(--text-color);
+}
+/* footer column newsletter css */
+#footer .footer-newsleter-section .form-control
+{
+    border-radius: 5px;
+    border: 0.5px solid #071B34;
+    background: #F6FEFF;
+    box-shadow: none;
+    width:300px;
+    height: 50px;
+}
+#footer .footer-newsleter-section .form-control::placeholder
+{
+    color: #8A8A8A;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#footer .footer-newsleter-section .btn-submit
+{
+    background-color: var(--blue_royal);
+    color: white;
+    margin-top:10px; 
+    width: 150px;
+    height: 45px;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+#footer .footer-newsleter-section .btn-submit:hover{
+    background-color: var(--skyblue_hoever);
+}
+
+/* **********************************bottom section  css starts*/
+#bottom-section {
+    background-color: var(--blue_royal);
+    padding: 12px 0px 12px 0px;
+}
+
+#bottom-section .copyright_bottom {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+#bottom-section .copyright_company {
+    text-align: right;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 992px) {
+    #bottom-section .copyright_bottom
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 992px) {
+    #bottom-section .copyright_company 
+        { 
+            text-align: center;
+            } 
+}

@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    font-family: Roboto;
+}
+a {
+    text-decoration: none;
+}
+
+:root {
+    --blue_royal: #071B34;
+    --text-color: #0E0F1D;
+    --skyblue_hoever:#4CC4CC;
+}
+
+/* top bar css starts  */
+#top-bar {
+    background-color: var(--blue_royal);
+    padding: 15px 0px 15px 0px;
+}
+
+#top-bar .top-bar-links {
+    padding-top: 5px;
+}
+
+#top-bar .fa-brands {
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#top-bar .top-bar-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#top-bar .top-bar-buttons .input-group {
+    box-shadow: none !important;
+    width: 40%;
+    margin-right: 20px;
+    border: white 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+#top-bar .top-bar-buttons .input-group .form-control::placeholder {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#top-bar .top-bar-buttons .form-control {
+    background-color: var(--blue_royal);
+    border: none !important;
+    box-shadow: none;
+    color: var(--blue_royal);
+}
+
+#top-bar .top-bar-sponsor-btn {
+    color: #071B34;
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    border: none !important;
+    background-color: white;
+    padding: 12px 8px 12px 8px;
+    /* color: #071B34;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase; */
+}
+
+#top-bar .top-bar-sponsor-btn img {
+    padding-left: 5px;
+    width: 25px;
+    height: 16px;
+}
+@media screen and (max-width: 992px) 
+{
+    #top-bar{
+        display: none;
+
+    }
+}
+/* top bar css ends */
+
+/* *****************nav-bar css starts ****************** */
+#nav-bar-section .navbar {
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+/* #nav-bar-section .navbar .custom_collapse 
+{
+    direction: ltr; 
+     display: flex;
+    justify-content: flex-end;
+} */
+#nav-bar-section .navbar .container-fluid .navbar-toggler .navbar-toggler-icon
+{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end;
+}
+#nav-bar-section .navbar-nav .nav-link {
+    color: #2D2D2D;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#nav-bar-section .navbar-nav .nav-item .dropdown-content {
+    display: none;
+}
+
+#nav-bar-section .navbar-nav .nav-item .dropdown-content li {
+    list-style-type: none;
+   
+}
+
+#nav-bar-section .navbar-nav .nav-item:hover .dropdown-content {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    margin: 0px;
+}
+#nav-bar-section .navbar-nav .nav-item .dropdown-content .dropdown-item
+{
+    color:#2D2D2D;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+#nav-bar-section .navbar-nav .nav-link .img_toggle{
+    height: 17px;
+}
+/* #nav-bar-section .navbar .nav_logo_img
+{
+    position: absolute;
+    margin: 150px 0px 0px -10px;
+} */
+#nav-bar-section .navbar .nav_logo_img .nav_logo_resize
+{
+    position: absolute;
+    top: 0px;
+    max-width: 220px;
+    height: auto;
+}
+
+@media screen and (max-width: 992px) 
+{
+    #nav-bar-section .navbar .nav_logo_img .nav_logo_resize
+    {
+         position: relative; 
+        width: 100px;
+        height: 100px; 
+        /* display: none; */
+    }
+}
+@media screen and (max-width: 992px) 
+{
+    #nav-bar-section .navbar-nav .nav-item:hover .dropdown-content {
+     position: relative;
+    } 
+}
+/* nav-bar-section css ends */
+
+/*  about banner css starts */
+#about_banner{
+    background:linear-gradient(to right, rgba(7, 27, 52, 0.90), rgba(7, 27, 52, 0.90)), url('/assets/images/about_img/banner_bg_about.png');
+    background-position: center;
+    background-size: cover;
+    padding: 140px 140px;
+}
+#about_banner .banner_content
+{
+    padding: 90px 0px 90px 0px; 
+}
+#about_banner .banner_content .about_banner_breadcrumb 
+{
+    text-transform: uppercase;
+    color: white;
+    font-family: Playfair Display;
+    /*font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 0em; */
+}
+#about_banner .banner_content .breadcrumb .breadcrumb-item
+{
+    padding-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+}
+#about_banner .banner_content .breadcrumb .breadcrumb-item a
+{
+    color: white;
+}
+#about_banner .banner_content .breadcrumb .breadcrumb-item .arrow_resize
+{
+     height: 13px;
+}
+@media screen and (max-width: 992px) 
+{
+    #about_banner
+    {
+        padding: 60px 0;
+    }
+}
+
+/****************************about banner css ends*********/
+
+
+/* csss about_content starts */
+#about_content
+{
+    padding: 60px 0px 60px 0px;
+}
+#about_content .content_heading
+{
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    /* line-height: 55.99px;
+    text-align: left; */
+    color: #071B34;
+
+}
+
+#about_content .content_info
+{
+    font-family: Roboto;
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: justified;
+
+}
+
+@media screen and (max-width: 992px) 
+{
+    #about_content .content_heading
+    {
+        font-size: 22px;
+    }
+}
+/* css about_content endss */
+
+
+/* csss oof value customer starts */
+#value_customer
+{
+    background: linear-gradient(to right, rgba(7, 27, 52, 0.90), rgba(7, 27, 52, 0.90)), url('/assets/images/about_img/unlocking_value_bg.png');
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0px 70px 0px;
+}
+#value_customer .value_customer_content .value_customer_heading
+{
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 10px;
+    /* line-height: 55.99px;
+    text-align: left; */
+
+}
+#value_customer .value_customer_content .value_customer_text
+{
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: justified;
+    color: white;
+}
+/* css small bussiness starts */
+#small_business
+{
+    padding: 70px 0px 70px 0px;
+}
+#small_business .small_busines_content .small_business_heading
+{
+    font-family: Playfair Display;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 45.99px;
+    color: #071B34;
+    padding-bottom: 5px;
+
+}
+#small_business .small_busines_content .small_business_text
+{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24x;
+    text-align: justified;
+    color: #2D2D2D;
+
+}
+@media screen and (max-width: 992px) 
+{
+    #small_business .small_busines_content .small_business_heading
+    {
+        font-size: 24px;
+        line-height: 35.99px;
+    }
+}    
+@media screen and (max-width: 992px) 
+{
+    #small_business .small_busines_content .small_business_text
+    {
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+
+/********** Footer css **********************************************8****/
+/* footer css first column */
+#footer
+{
+    padding:20px 0px 20px 0px;
+}
+#footer .footer_logo-section .footer_logo {
+    max-width: 120px;
+}
+
+#footer .footer_logo-section .footer_text {
+    color: #040404;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    padding-top: 5px;
+}
+
+#footer .footer_logo-section .footer_social_icons .fa-brands {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    background-color: var(--blue_royal);
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+
+#footer .footer_title {
+    color: #0E0F1D;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+#footer .footer_nav_links .footer_links .link {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+#footer .footer_nav_links .footer_links .link a {
+    color: var(--text-color);
+}
+
+#footer .footer_nav_links .footer_links {
+    padding: 0px;
+}
+
+#footer .footer_nav_links .footer_links .fa-solid {
+    color: var(--text-color);
+    padding-right: 7px;
+}
+#footer .footer_contact_media
+{
+    display: flex;
+    gap: 7px;
+} 
+#footer .footer_contact_media .footer_contact_link
+{
+    color: var(--text-color);
+}
+/* footer column newsletter css */
+#footer .footer-newsleter-section .form-control
+{
+    border-radius: 5px;
+    border: 0.5px solid #071B34;
+    background: #F6FEFF;
+    box-shadow: none;
+    width:300px;
+    height: 50px;
+}
+#footer .footer-newsleter-section .form-control::placeholder
+{
+    color: #8A8A8A;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#footer .footer-newsleter-section .btn-submit
+{
+    background-color: var(--blue_royal);
+    color: white;
+    margin-top:10px; 
+    width: 150px;
+    height: 45px;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+#footer .footer-newsleter-section .btn-submit:hover{
+    background-color: var(--skyblue_hoever);
+}
+
+/* **********************************bottom section  css starts*/
+#bottom-section {
+    background-color: var(--blue_royal);
+    padding: 12px 0px 12px 0px;
+}
+
+#bottom-section .copyright_bottom {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+#bottom-section .copyright_company {
+    text-align: right;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 992px) {
+    #bottom-section .copyright_bottom
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 992px) {
+    #bottom-section .copyright_company 
+        { 
+            text-align: center;
+            } 
+}
